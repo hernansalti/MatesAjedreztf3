@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- encabezado -->
+    <header>
+        <a href="../index.html"><img class="logo" src="../img/logo1.jpeg" alt="logo"></a>
+        <div>
+            <h1>Mates Ajedrez</h1>
+            <h2>Ja, qué mate!</h2>
+        </div>
+        <p class="sesion"><a href="../index.html" id="decoracionMenu"> ◄ Home ► </a></p>
+    </header>
+    <!-- cuerpo -->
+    <section>
+        <h2 class="subtitulo">Ingreso</h2>
+    </section>   
+    <form class="formulario" action="" method="POST" enctype="text/plain">
+        <fieldset class="formulario__contenido">
+            <legend class="sub2">Ingresá</legend>
+            <label for="e-mail">Ingresá tu e-mail</label>
+            <input type="email" name="e-mail" placeholder="nombre@ejemplo.com"/>
+            <label for="password">Ingresá tu Contraseña</label>
+            <input type="password" name="password" placeholder="Ingresa Contraseña" />
+            <input class="centrado" type="submit" value="Entrar">
+            <input class="centrado" type="reset"value="Limpiar">
+        </fieldset>
+    </form>        
+    <form class="formulario" action=""method="POST" enctype="text/plain">
+        <fieldset class="formulario__contenido">
+            <legend class="sub2">¿Todavía no te registraste?</legend>
+            <label for="nombre">Ingresá tu nombre</label>
+            <input type="text" name="nombre" placeholder="Nombre"/>
+            <label for="e-mail">Ingresá tu e-mail</label>
+            <input type="email" name="e-mail" placeholder="nombre@ejemplo.com"/>
+            <label for="password">Ingresá tu Contraseña</label>
+            <input type="password" name="password" placeholder="Ingresa Contraseña" />
+            <p>Indicar</p>
+            <select name="seleccionar">
+                <option value="individuo">Individuo</option>
+                <option value="comercio">Comercio</option>
+                <option value="revendedor">Revendedor</option>
+            </select>
+            <div>
+                <p>¿Deseas recibir las novedades?</p>
+                <label for="informacion">si</label>
+                <input type="radio" name="informacion" value="si">
+                <label for="informacion">no</label>
+                <input type="radio" name="informacion" value="no">
+            </div>            
+            <div> 
+                <input class="sel centrado" type="checkbox"  name="acepta" value="Acepta">
+                <p class="centrado">Acepto los términos y condiciones</p>
+            </div>
+            <input class="centrado" type="submit" value="Registrarme">
+            <input class="centrado" type="reset"value="Limpiar">
+        </fieldset>
+    </form>
+    <!-- pie de pagina -->
+    <footer>
+        <h4 class="comentarioFooter">Si querés conocer todos los productos que traemos para vos diariamente, seguinos en Instagram!</h4>   
+        <a href="https://www.instagram.com/somos.ajedrez/" target="_blank"><img class="logoig" src="../img/Logo-instagram.png" alt="Logo de instagram"></a>
+    </footer>
+</body>
+</html>

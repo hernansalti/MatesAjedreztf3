@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* inicio del header */
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* media query */
+
+@media (min-width: 320px){
+    header{
+        display: flex;
+text-align: center;
+font-size: 50px;
+flex-wrap: wrap;
+}
+.flex-menu{
+display: flex;
+text-align: center;
+font-size: 50px;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-evenly;
+}
+.imagen3{
+    display: flex;
+    flex-wrap:initial;
+   flex-direction: column;
+    
+}
+.nosotros{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+}
+h1{
+    font-family: 'Julius Sans One', sans-serif;
+    text-align: center;
+    color: black;
+    font-size: 80px;
+    padding-top: 50px;
+}
+h2{
+    font-family: 'Julius Sans One', sans-serif;
+    text-align: center;
+    color: black;
+    line-height: 40px;
+    margin-bottom: 10px;
+    font-size: 35px;
+    margin-left: 320px;
+}
+.logo{
+    height: 150px;
+    padding-top: 60px;
+    padding-left: 10vh;
+}
+.sesion{
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 15px;
+    text-decoration-line: none;
+    padding-top: 160px; 
+}
+/* menu */
+ nav{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.dec{
+    text-decoration: none;
+    color: black;   
+}
+.dec:hover{
+    text-shadow: 3px 3px 5px #5dc1b9;
+}
+.flex-menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+nav ul li{
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: black;
+    height: 50px;
+}
+
+nav ul li ul li{
+    padding: 15px;
+    background-color: #5dc1b93d;
+}
+#decoracionMenu{
+    text-decoration: none;
+    color: black;
+}
+#decoracionMenu:hover{
+    text-shadow: 3px 3px 5px #5dc1b9;
+} */
+/* transition */
+.desplegable{
+    background-color: rgba(255, 255, 255, 0.486);
+    width: 100px;
+    height: 200px;
+    transition: all 1.5s;
+}
+.desplegable:hover{
+    height: 200px; width: 100px;
+    padding: 20px;
+    background-color: #5dc1b98a;
+}
+/* cuerpo */
+body{
+    background: url("../img/fondo3b.png");
+    
+ }
+.subtitulo{
+    font-family: 'Julius Sans One', sans-serif;
+    color: black;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    line-height: 200px;
+    font-size: 45px;
+}
+.sub{
+    text-decoration: underline;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 25px;
+    margin-right: 1200px;
+    margin-bottom: 10px;
+}
+/* seccion home */
+.principal_individuo{ 
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-size: 30px;
+    text-shadow: 3px 3px 5px #5dc1b9;
+    text-align: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.individuo-flex{
+    background: rgba(255, 255, 255, 0.61);
+    display: flex;
+    flex-direction: column;
+    margin: 10px
+}
+/* transition */
+.imagen1{
+    width: 50vw;
+    margin-left: 30px;
+    transition: all 1.5s;
+}
+
+.principal__mayoristas{ 
+    display: flex;
+    font-family: 'Raleway', sans-serif;    
+    color: white;
+    font-size: 30px;
+    text-shadow: 3px 3px 5px #5dc1b9;
+    text-align: center;
+    align-items: center;
+}
+.mayorista-flex{
+    background: rgba(7, 7, 7, 0.61);
+    display: flex;
+    flex-direction: column;
+    margin: 10px
+}
+.imagen2{
+    width: 50vw;
+    margin: 100px 10px 100px 10px;
+    transition: all 1s;
+}
+.imagen2:hover{
+    box-shadow: -10px -10px 5px #5dc1b9;
+}
+/*seccion mates*/
+/* estilos grid-area */
+#grilla{
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo titulo titulo"
+    "menu fotos fotos fotos"
+    "menu fotos fotos fotos"
+    "menu fotos fotos fotos";
+}
+#titulo{
+    grid-area: titulo;
+}
+#menuLista{
+    grid-area: menu;
+    font-size: 3vw;
+    padding: 5vh;
+    background-color: rgba(251, 249, 252, 0.274);
+    list-style-type: none;
+    font-family: 'Raleway', sans-serif;
+}
+.menuLista{
+    list-style-type: none;
+    font-family: 'Raleway', sans-serif;
+}
+.menuListaLi{
+    padding-bottom: 100px;
+}
+#fotos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 35vh 35vh 35vh;
+    grid-area: fotos;
+}
+.fotomate{
+    padding: 5px;
+    margin: 5px;
+    border: solid black;
+    width: 40%;
+}
+
+/* seccion nosotros */
+.nosotros{
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.nosotros-flex{
+    background: #5dc1b993;
+    display: flex;
+    flex-direction: column;
+    margin: 20px
+}
+.imagen3{
+    width: 30vw;
+    margin-left: 50px;
+}
+/* seccion contacto */
+.imagenwp{
+    width: 20vh;
+}
+.whatsapp{ 
+    display: flex;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    font-family: 'Raleway', sans-serif;    
+    color: white;
+    font-size: 30px;
+    text-shadow: 3px 3px 5px #5dc1b9;
+    text-align: center;
+    align-items: center;
+}
+.whatsapp-flex{
+    background: rgba(7, 7, 7, 0.61);
+    display: flex;
+    flex-direction: column;
+    margin: 10px
+}
+/* tabla */
+.sub2{
+    text-decoration: underline;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+th{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+td{
+    font-family: 'Raleway', sans-serif, bold;
+    text-align: justify;
+    color: black;
+    font-size: 20px;
+    padding: 5px;
+}
+.marca{
+    text-align: center;
+}
+table{
+    padding: 0px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 30px;
+    background-color: white;
+    border-color: #5dc1b9b7;
+}
+/*seccion ingreso */
+.formulario{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.formulario__contenido{
+    background-color: white;
+    padding: 15px; 
+    margin: 50px;
+    line-height: 25px;  
+}
+.sel{
+    margin-top: 15px;
+}
+.centrado{
+    margin-top: 10px;
+    margin-left: 150px;
+    padding-inline: 2%;
+}
+/* pie de pagina */
+/* gradiente */
+footer{
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(rgba(0, 0, 0, 0.486), white)  
+}
+.comentarioFooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Raleway', sans-serif, bold;
+    font-size: 18px;
+    padding-left: 10px;
+}
+.logoig{
+    display: flex;
+    width: 60px;
+
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mates Ajedrez</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- encabezado -->
+    <header>
+        <img class="logo" src="img/logo1.jpeg" alt="logo">
+        <div>
+            <h1>Mates Ajedrez</h1>
+            <h2>Ja, qué mate!</h2>
+        </div>   
+        <p class="sesion"><a href="pages/ingreso.html" id="decoracionMenu">Crear Cuenta / Iniciar Sesión</a></p>
+    </header>
+    <!-- menu -->
+           <!-- nav linkeado con bootstrap  -->
+    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm" aria-label="Tenth navbar example">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            <a id="decoracionMenu" class="nav-link active dec" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a id="decoracionMenu" class="nav-link dropdown-toggle dec" id="dropdown08" data-bs-toggle="dropdown">Productos</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown08">
+                    <li><a id="decoracionMenu" class="dropdown-item dec" href="pages/Productos/mates.html">Mates</a></li>
+                    <li><a id="decoracionMenu" class="dropdown-item dec" href="pages/Productos/termos.html">Termos</a></li>
+                    <li><a id="decoracionMenu" class="dropdown-item dec" href="pages/Productos/bazar.html">Bazar</a></li>
+                    <li><a id="decoracionMenu" class="dropdown-item dec" href="pages/Productos/deco.html">Deco</a></li>
+                </ul>
+                </li>
+            <li class="nav-item">
+            <a id="decoracionMenu" class="nav-link dec" href="pages/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a id="decoracionMenu" class="nav-link dec" href="pages/un_buen_mate.html">Un_Buen_Mate</a>
+                </li>
+                <li class="nav-item">
+                    <a id="decoracionMenu" class="nav-link dec" href="pages/contacto.html">Contacto</a>
+                    </li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+    <!-- cuerpo -->      
+    <section class="principal">  
+        <article class="principal_individuo">
+            <img class="imagen1" src="img/carrousell1.png" alt="Carrousel de imagenes">
+            <div class="individuo-flex">
+                <h3>Conocé las novedades de este mes!</h3>
+                <p>Entrá y descubrí todos los productos nuevos que tenemos para vos.</p>            
+            </div>
+        </article>
+        <article class="principal__mayoristas">
+            <div class="mayorista-flex">
+                <h3>¿Querés vender nuestros productos?</h3>
+                <p>Sólo tenes que ingresar a nuestra sección mayorista y elegir lo que querés!</p> 
+            </div>
+            <img class="imagen2" src="img/fotomayorista.jpeg" alt="Imagen de sets materos">
+        </article>
+    </section>
+    <!-- pie de pagina -->
+    <footer>
+        <h4 class="comentarioFooter">Si querés conocer todos los productos que traemos para vos diariamente, seguinos en Instagram!</h4>   
+        <a href="https://www.instagram.com/somos.ajedrez/" target="_blank"><img class="logoig" src="img/Logo-instagram.png" alt="Logo de instagram"></a>
+    </footer> 
+</body>
+</html>
